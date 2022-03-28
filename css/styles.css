@@ -75,7 +75,7 @@ textarea {
     padding: 15px;
     width: 100%;
     background-color: white;
-    color: black;
+    color: darkslategrey;
     font-size: 13px;
 }
 
@@ -84,8 +84,8 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-    border: 2px solid orange;
-    background-color: peachpuff;
+    border: 2px solid lightskyblue;
+    background-color: rgb(219, 246, 255);
     transition: background-color 1.5s;   
 }
 
@@ -95,7 +95,7 @@ input[type="tel"]:not(:focus),
 select:not(:focus),
 textarea:not(:focus) {
     background-color: white;
-    transition: background-color 1s;   
+    transition: background-color 1.5s;   
 }
 
 
@@ -143,7 +143,7 @@ button {
     padding: 20px 0;
     border:none;
     border-radius: 3px 3px;
-    background-color: rgb(64, 59, 109);
+    background-color: rgb(152, 143, 235);
     color: white;
 }
 
