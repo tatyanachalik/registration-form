@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+
+
+#intro{
+    margin: 0 auto 4px;
+    width: 95%;
+    text-align: center;
+    border-bottom: 4px solid darkslategrey;
+    max-width: 600px;
+}
+
+#intro h2 {
+   margin: 35px 0 10px;
+   color: darkslategrey;
+   font-size: 18px;
+}
+
+#intro p {
+    margin: 0 0 35px;
+    padding: 0 10px;
+    font-size: 17px;
+    color: lightslategrey;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+header h1 {
+    background-color: rgb(64, 59, 109);
+    color:white;
+    text-transform:uppercase;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size:20px;
+}
+
+#contact {
+    border-bottom: 2px solid darkslategrey;
+}
+
+
+#contact legend,
+#newsletter legend {
+    padding: 25px 0px 10px;
+    font-size: 19px;
+    font-weight: bold;
+    color: darkslategrey;
+}
+body{
+    margin: 0 auto;
+}
+form {
+    border-top: 2px solid darkslategrey;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 95%;
+    background-color: rgb(230, 230, 240);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    border:none;
+    border-radius:3px 3px;
+    height: auto;
+    margin:10px 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid orange;
+    background-color: peachpuff;
+    transition: background-color 1.5s;   
+}
+
+input[type="text"]:not(:focus),
+input[type="email"]:not(:focus),
+input[type="tel"]:not(:focus),
+select:not(:focus),
+textarea:not(:focus) {
+    background-color: white;
+    transition: background-color 1s;   
+}
+
+
+label {
+    color: lightslategray;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin: 10px 4px 8px 10px;
+
+}
+
+#zip_code {
+    width: 50%;
+    display: block;
+}
+
+::placeholder {
+    color: darkgrey;
+    font-style: italic;
+    float: right;
+    font-size: 12px;
+}
+
+fieldset {
+    border: none;
+    line-height: 1.5;
+}
+
+textarea {
+    height: 90px;
+    margin: 10px 0 20px;
+    font-size: 13px;
+}
+
+textarea::placeholder {
+    float: left;
+}
+
+button {
+    width: 100%;
+    padding: 20px 0;
+    border:none;
+    border-radius: 3px 3px;
+    background-color: rgb(64, 59, 109);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: darkgrey;
+    font-size: 13px;
+    margin: 25px 0 ;
+}
+
+@media (min-width: 768px) {
+    #contact {
+        display:flex;
+        flex-wrap:wrap;
+    }
+    #contact label {
+        width:30%;
+        align-self: center;
+    }
+
+    #contact input:not(#zip_code),
+    select {
+        width: 70%;
+    }
+
+    #zip_code {
+        width: 25%;
+    }
+
+}
