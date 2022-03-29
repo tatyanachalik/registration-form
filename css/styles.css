@@ -41,9 +41,7 @@ header h1 {
 
 #contact {
     border-bottom: 2px solid darkslategrey;
-    flex-basis: 100%;
 }
-
 
 #contact legend,
 #newsletter legend {
@@ -61,8 +59,6 @@ body{
     margin: 0 auto;
 }
 form {
-    display:flex;
-    flex-wrap: wrap;
     border-top: 2px solid darkslategrey;
     max-width: 600px;
     margin: 0 auto;
@@ -116,7 +112,6 @@ label {
 label:not(.box) {
     flex-basis:100%;
 }
-
 
 .click { 
     display:flex;
