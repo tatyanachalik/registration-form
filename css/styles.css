@@ -3,28 +3,29 @@
     font-family: 'Merriweather', serif;
 }
 
-
-
 #intro{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto 4px;
     width: 95%;
-    text-align: center;
     border-bottom: 4px solid darkslategrey;
     max-width: 600px;
 }
 
 #intro h2 {
-   margin: 35px 0 10px;
    color: darkslategrey;
    font-size: 18px;
+   padding-top: 20px;
 }
 
 #intro p {
-    margin: 0 0 35px;
-    padding: 0 10px;
-    font-size: 17px;
-    color: lightslategrey;
+    text-align: center;
+    padding-bottom: 20px;
+    flex-basis: 85%;
     font-size: 14px;
+    color: lightslategrey;
     font-weight: 300;
 }
 
@@ -41,20 +42,28 @@ header h1 {
 
 #contact {
     border-bottom: 2px solid darkslategrey;
+    flex-basis: 100%;
 }
 
 
 #contact legend,
 #newsletter legend {
-    padding: 25px 0px 10px;
+    padding: 25px 0px 0px;
     font-size: 19px;
     font-weight: bold;
     color: darkslategrey;
 }
+
+#contact legend {
+    padding-bottom: 20px;
+}
+
 body{
     margin: 0 auto;
 }
 form {
+    display:flex;
+    flex-wrap: wrap;
     border-top: 2px solid darkslategrey;
     max-width: 600px;
     margin: 0 auto;
@@ -73,7 +82,7 @@ textarea {
     margin:10px 0;
     outline: 0;
     padding: 15px;
-    width: 100%;
+    flex-basis: 100%;
     background-color: white;
     color: darkslategrey;
     font-size: 13px;
@@ -105,15 +114,30 @@ label {
     font-size: 13px;
 }
 
+label:not(.box) {
+    flex-basis:100%;
+}
+
+
+.click { 
+    display:flex;
+    flex-basis:100%;
+    align-items:center;
+}
+
+
 input[type="radio"],
 input[type="checkbox"]{
-    margin: 10px 4px 8px 10px;
+    margin: 10px 15px 8px 10px;
 
 }
 
+#newsletter label:not(.box) {
+    margin-top: 20px;
+}
+
 #zip_code {
-    width: 50%;
-    display: block;
+    flex-basis: 50%;
 }
 
 ::placeholder {
@@ -124,6 +148,8 @@ input[type="checkbox"]{
 }
 
 fieldset {
+    display:flex;
+    flex-wrap:wrap;
     border: none;
     line-height: 1.5;
 }
@@ -139,7 +165,7 @@ textarea::placeholder {
 }
 
 button {
-    width: 100%;
+    flex-basis: 100%;
     padding: 20px 0;
     border:none;
     border-radius: 3px 3px;
@@ -156,22 +182,18 @@ footer {
 }
 
 @media (min-width: 768px) {
-    #contact {
-        display:flex;
-        flex-wrap:wrap;
-    }
     #contact label {
-        width:30%;
+        flex-basis:30%;
         align-self: center;
     }
 
     #contact input:not(#zip_code),
     select {
-        width: 70%;
+        flex-basis: 70%;
     }
 
     #zip_code {
-        width: 25%;
+        flex-basis: 25%;
     }
 
 }
