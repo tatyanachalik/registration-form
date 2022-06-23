@@ -86,8 +86,8 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-    border: 2px solid lightskyblue;
-    background-color: rgb(219, 246, 255);
+    border: 2px solid rgb(140, 130, 248);
+    background-color: rgb(232, 231, 255);
     transition: background-color 1.5s;   
 }
 
